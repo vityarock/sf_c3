@@ -6,35 +6,47 @@
     	<script src="./src/script.js" defer></script>
     	<title>C3_cookies</title>
 	</head>
-	<span class="city-label"><small>Ваш город: </small><strong class= "city" style="font-size: 20px; color: #c7630a;">
-	Undefineburg</strong><a class= "city-change text-lowercase font-italic" href="#"> Изменить</a></span>
+	
+	<span class="city-label"><small>
+	Ваш город: </small><strong class= "city" style="font-size: 20px; color: #c7630a;">
+	Undefineberg</strong><a class="city-change text-lowercase font-italic" href="#">
+	 Изменить</a></span>
+	
 	<hr>
-	<textarea class="city-form" style=" display: none; width:200px; height: 60px;" id="area" placeholder="Ваш город"></textarea>
-<br>
-<button class="city-form" style=" display: none;" onclick="localStorage.removeItem('area');area.value=''">Очистить</button>
+	
+	<textarea class="city-form d-none" style="width:200px; height: 60px;" id="area" placeholder="Введите Ваш город"></textarea>
+	<button class="city-btn d-none" onclick="localStorage.removeItem('area');area.value=''">Очистить</button>
+
 	<form name="myForm" class="form form-check" action="" method="POST">
-		<fieldset class="d-flex justify-content-start">
-            <legend>Пожалуйста проставьте галочки</legend>
-            <label for="variant-1">Cats</label>
-            <input class="mr-5" type="checkbox" id="button1" name="animal" value="cats">
-
-            <label for="variant-2">Dogs</label>
-            <input class="mr-5" type="checkbox" id="button2" name="animal" value="dogs">
-
-            <label for="variant-3">Parrots</label>
-            <input class="mr-5" type="checkbox" id="button3" name="animal" value="parrots">
-
-            <label for="variant-1">Cats</label>
-            <input class="mr-5" type="checkbox" id="button1" name="animal" value="cats">
-
-            <label for="variant-2">Dogs</label>
-            <input class="mr-5" type="checkbox" id="button2" name="animal" value="dogs">
-
-            <label for="variant-3">Parrots</label>
-            <input class="mr-5" type="checkbox" id="button3" name="animal" value="parrots">
+		<fieldset>
+            <legend>Укажите ваши увлечения</legend>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="button1" name="animal" value="cats">
+			<label class="form-check-label" for="button1">Прогулки на свежем воздухе</label>
+			</div>
+			<div class="form-check">
+			<input class="form-check-input" type="checkbox" id="button2" name="animal" value="dogs">
+            <label class="form-check-label" for="button2">Чтение книг</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="button3" name="animal" value="parrots">
+            <label class="form-check-label" for="button3">Рыбалка</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="button4" name="animal" value="cats">
+            <label class="form-check-label" for="button4">Сбор ягод и грибов</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="button5" name="animal" value="dogs">
+            <label class="form-check-label" for="button5">Работы в саду</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="button6" name="animal" value="parrots">
+            <label class="form-check-label" for="button6">Музыкальные инструменты</label>
+            </div>
 
         </fieldset>
-<button type="button">Проголосовать</button>
+<button type="button">Запомнить</button>
 	    
 	</form>
 	<div class="alert alert-success hidden" style="display: none;" role="alert">
