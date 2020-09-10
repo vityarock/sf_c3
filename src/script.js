@@ -36,13 +36,13 @@ if (lockStatus == 'true') {
   console.log("status true")
   
 
-  checkbox1.checked = cookieRead['walking'];
-  // if (cookieRead['walking'] == 'true') checkbox1.checked = true;
-  // if (cookieRead['reading'] == 'true') checkbox2.checked = true;
-  // if (cookieRead['fishing'] == 'true') checkbox3.checked = true;
-  // if (cookieRead['forestwalk'] == 'true') checkbox4.checked = true;
-  // if (cookieRead['gardenwork'] == 'true') checkbox5.checked = true;
-  // if (cookieRead['playmusic'] == 'true') checkbox6.checked = true;
+  // checkbox1.checked = cookieRead['walking'];
+  if (cookieRead['walking'] == 'true') checkbox1.checked = true;
+  if (cookieRead['reading'] == 'true') checkbox2.checked = true;
+  if (cookieRead['fishing'] == 'true') checkbox3.checked = true;
+  if (cookieRead['forestwalk'] == 'true') checkbox4.checked = true;
+  if (cookieRead['gardenwork'] == 'true') checkbox5.checked = true;
+  if (cookieRead['playmusic'] == 'true') checkbox6.checked = true;
 } 
 
 
