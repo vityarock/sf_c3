@@ -3,6 +3,7 @@
 	<head>
     	<meta charset="UTF-8">
     	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    	<script src="./node_modules/js-cookie/src/js.cookie.js" defer></script>
     	<script src="./src/script.js" defer></script>
     	<title>C3_cookies</title>
 	</head>
@@ -21,36 +22,31 @@
 		<fieldset>
             <legend>Укажите ваши увлечения</legend>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button1" name="animal" value="cats">
+            <input class="form-check-input" type="checkbox" id="button1">
 			<label class="form-check-label" for="button1">Прогулки на свежем воздухе</label>
 			</div>
 			<div class="form-check">
-			<input class="form-check-input" type="checkbox" id="button2" name="animal" value="dogs">
+			<input class="form-check-input" type="checkbox" id="button2"">
             <label class="form-check-label" for="button2">Чтение книг</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button3" name="animal" value="parrots">
+            <input id="button3" class="form-check-input" type="checkbox">
             <label class="form-check-label" for="button3">Рыбалка</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button4" name="animal" value="cats">
+            <input class="form-check-input" type="checkbox" id="button4">
             <label class="form-check-label" for="button4">Сбор ягод и грибов</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button5" name="animal" value="dogs">
+            <input class="form-check-input" type="checkbox" id="button5">
             <label class="form-check-label" for="button5">Работы в саду</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button6" name="animal" value="parrots">
+            <input class="form-check-input" type="checkbox" id="button6">
             <label class="form-check-label" for="button6">Музыкальные инструменты</label>
             </div>
 
         </fieldset>
-<button type="button">Запомнить</button>
+<button class="setbutton" type="button">Запомнить</button>
 	    
 	</form>
-	<div class="alert alert-success hidden" style="display: none;" role="alert">
-  <p>Спасибо, Ваш голос учтён!</p>
-
-	    <a href="./vote_result.html">Просмотр результатов</a>	  
-	    </div> 
