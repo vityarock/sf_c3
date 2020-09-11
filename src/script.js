@@ -35,17 +35,20 @@ if (lockStatus == 'true') {
   lockCheckboxes();	
   console.log("status true")
   
-
-  // checkbox1.checked = cookieRead['walking'];
-  if (cookieRead['walking'] == 'true') checkbox1.checked = true;
-  if (cookieRead['reading'] == 'true') checkbox2.checked = true;
-  if (cookieRead['fishing'] == 'true') checkbox3.checked = true;
-  if (cookieRead['forestwalk'] == 'true') checkbox4.checked = true;
-  if (cookieRead['gardenwork'] == 'true') checkbox5.checked = true;
-  if (cookieRead['playmusic'] == 'true') checkbox6.checked = true;
+checkbox1.checked = cookieRead['walking'];
+checkbox2.checked = cookieRead['reading'];
+checkbox3.checked = cookieRead['fishing'];
+checkbox4.checked = cookieRead['forestwalk'];
+checkbox5.checked = cookieRead['gardenwork'];
+checkbox6.checked = cookieRead['playmusic'];
+		
+//   if (cookieRead['walking'] == 'true') checkbox1.checked = true;
+//   if (cookieRead['reading'] == 'true') checkbox2.checked = true;
+//   if (cookieRead['fishing'] == 'true') checkbox3.checked = true;
+//   if (cookieRead['forestwalk'] == 'true') checkbox4.checked = true;
+//   if (cookieRead['gardenwork'] == 'true') checkbox5.checked = true;
+//   if (cookieRead['playmusic'] == 'true') checkbox6.checked = true;
 } 
-
-
 
 
 setbutton.onclick = () => {
@@ -62,14 +65,14 @@ setbutton.onclick = () => {
 
 }
 function getCheckboxValues() {
-	let checkboxes = new Object();
-	checkboxes['walking'] = checkbox1.checked;
-	checkboxes['reading'] = checkbox2.checked;
-	checkboxes['fishing'] = checkbox3.checked;
-	checkboxes['forestwalk'] = checkbox4.checked;
-	checkboxes['gardenwork'] = checkbox5.checked;
-	checkboxes['playmusic'] = checkbox6.checked;
-	return checkboxes;
+  let checkboxes = new Object();
+  checkboxes['walking'] = checkbox1.checked;
+  checkboxes['reading'] = checkbox2.checked;
+  checkboxes['fishing'] = checkbox3.checked;
+  checkboxes['forestwalk'] = checkbox4.checked;
+  checkboxes['gardenwork'] = checkbox5.checked;
+  checkboxes['playmusic'] = checkbox6.checked;
+  return checkboxes;
 }
 function lockCheckboxes() {
   checkbox1.disabled = true;
