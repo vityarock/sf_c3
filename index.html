@@ -5,50 +5,52 @@
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js"></script>
     	<script src="./src/script.js" defer></script>
-	<link rel="icon" href="./src/favicon.png" type="image/x-icon">
+	    <link rel="icon" href="./src/favicon.png" type="image/x-icon">
         <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon">
     	<title>C3_cookies</title>
 	</head>
 	
-	<span class="city-label"><small>
-	Ваш город: </small><strong class= "city" style="font-size: 20px; color: #c7630a;">
-	Undefineberg</strong><a class="city-change text-lowercase font-italic" href="#">
-	 Изменить</a></span>
+	<span class="city-label"><small>Ваш город: </small>
+        <strong class= "city" style="font-size: 20px; color: #c7630a;">Undefineberg</strong>
+        <a class="city-change text-lowercase font-italic" href="#">Изменить</a>
+    </span>
 	
 	<hr>
 	
-	<textarea class="city-form d-none" style="width:200px; height: 60px;" id="area" placeholder="Введите Ваш город"></textarea>
+	<textarea class="city-form d-none" style="width:200px; height: 60px;" id="area" placeholder="Введите Ваш город">
+        
+    </textarea>
 	<button class="city-btn d-none" onclick="localStorage.removeItem('area');area.value=''">Очистить</button>
 
 	<form name="myForm" class="form form-check" action="" method="POST">
 		<fieldset>
             <legend>Укажите ваши увлечения</legend>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button1">
-			<label class="form-check-label" for="button1">Прогулки на свежем воздухе</label>
+                <input class="form-check-input" type="checkbox" id="button1">
+			    <label class="form-check-label" for="button1">Прогулки на свежем воздухе</label>
 			</div>
 			<div class="form-check">
-			<input class="form-check-input" type="checkbox" id="button2"">
-            <label class="form-check-label" for="button2">Чтение книг</label>
+			    <input class="form-check-input" type="checkbox" id="button2"">
+                <label class="form-check-label" for="button2">Чтение книг</label>
             </div>
             <div class="form-check">
-            <input id="button3" class="form-check-input" type="checkbox">
-            <label class="form-check-label" for="button3">Рыбалка</label>
+                <input id="button3" class="form-check-input" type="checkbox">
+                <label class="form-check-label" for="button3">Рыбалка</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button4">
-            <label class="form-check-label" for="button4">Сбор ягод и грибов</label>
+                <input class="form-check-input" type="checkbox" id="button4">
+                <label class="form-check-label" for="button4">Сбор ягод и грибов</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button5">
-            <label class="form-check-label" for="button5">Работы в саду</label>
+                <input class="form-check-input" type="checkbox" id="button5">
+                <label class="form-check-label" for="button5">Работы в саду</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="button6">
-            <label class="form-check-label" for="button6">Музыкальные инструменты</label>
+                <input class="form-check-input" type="checkbox" id="button6">
+                <label class="form-check-label" for="button6">Музыкальные инструменты</label>
             </div>
 
         </fieldset>
-<button class="setbutton" type="button">Запомнить</button>
+        <button class="setbutton" type="button">Запомнить</button>
 	    
 	</form>
