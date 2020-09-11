@@ -16,7 +16,7 @@ citychange.onclick = () => {
   cityblock.classList.add('d-none')
   changeform.classList.remove('d-none');
   changebtn.classList.remove('d-none');
-  lockCheckboxes();
+  
 }
 
 area.value = localStorage.getItem('area');
@@ -47,6 +47,7 @@ setbutton.onclick = () => {
   let stringCheckbox = JSON.stringify(checkboxes);
   Cookies.set('checkboxes', stringCheckbox);
   Cookies.set('lock', 'true')
+  lockCheckboxes();
 }
 
 function getCheckboxValues() {
